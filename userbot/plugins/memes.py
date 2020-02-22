@@ -900,11 +900,25 @@ async def source(e):
         await e.edit("IF YOU WANT REPO SO GIVE ME 500 RUPEES.")
 			  
 @register(outgoing=True, pattern="^.mc$")
-async def source(Madar Chod):
+async def source(madarchod):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("Madar Chod")
 			  
+@register(outgoing=True, pattern="^.bc$")
+async def source(behenchod):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("Behen Chod")
 			  
+@register(outgoing=True, pattern="^.sry$")
+async def source(sorry):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("😔Sorry😔")
+			  
+@register(outgoing=True, pattern="^.sml$")
+async def source(smiley):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("😄😄😄😄😄😄")			  
+			  			  
 @register(outgoing=True, pattern="^.str(?: |$)(.*)")
 async def stretch(stret):
     """ Stretch it."""
